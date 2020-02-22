@@ -1,2 +1,1 @@
-# mobpsyonly
-MOBPSYCHO100 unofficial fan event website
+# github_page_test
