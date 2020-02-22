@@ -24,12 +24,12 @@
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script>
-      jQuery(document).ready(function( $ ) {
-          $('.counter').counterUp({
-              delay: 10,
-              time: 700
-          });
-      });
+        jQuery(document).ready(function($) {
+            $('.counter').counterUp({
+                delay: 10,
+                time: 1000
+            });
+        });
     </script>
 
     <!-- HTLM5shiv ie6~8 -->
@@ -121,7 +121,16 @@
                             <div class="txt">
                                 <h3>부스 신청</h3>
                                 <p class="subtxt">2020. 02. 28</p>
-                                <a href="#"><div class="btn_apply">부스 신청하기</div></a>
+                                <button type="button" id="booth" class="btn_apply">부스 신청하기</button>
+                                
+                                <!-- The Modal -->
+                                <div id="modal" class="modal">
+                                <!-- Modal content -->
+                                    <div class="modal-content">                     
+                                        <p class="modal_txt">아직 신청기간이 아닙니다.</p>
+                                        <button type="button" id="modal_close_btn">닫기</button>                                  
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="step">
@@ -135,7 +144,7 @@
                             <div class="txt">
                                 <h3>선입금 신청</h3>
                                 <p class="subtxt">2020. 02. 28</p>
-                                <a href="#"><div class="btn_apply">선입금 신청하기</div></a>
+                                <button button type="button" id="enter" class="btn_apply">선입금 신청하기</button>
                             </div>
                         </div>
                         <div class="step">
@@ -218,6 +227,19 @@
     
     <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
     <script src="jquery.counterup.min.js"></script>
+    <script>
+           document.getElementById("booth").onclick = function() {
+               document.getElementById("modal").style.display="block";
+           }
+
+           document.getElementById("enter").onclick = function() {
+               document.getElementById("modal").style.display="block";
+           }
+           
+           document.getElementById("modal_close_btn").onclick = function() {
+               document.getElementById("modal").style.display="none";
+           }   
+    </script>
 
 </body>
 </html>
