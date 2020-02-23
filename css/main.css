@@ -180,7 +180,7 @@ footer {
 }
 
 .icon>img{
-    width: 56px;
+    height: 56px;
 }
 
 .line {
@@ -265,7 +265,7 @@ footer {
 #info {
     padding: 3rem 0;
     text-align: center;
-    background-color: #29293B;
+    background-color: #211C2F;
 }
 
 .card_wrap {
