@@ -266,6 +266,8 @@ footer {
     padding: 3rem 0;
     text-align: center;
     background-color: #211C2F;
+    background: url(../img/pattern.png);
+    background-repeat: repeat;
 }
 
 .card_wrap {
