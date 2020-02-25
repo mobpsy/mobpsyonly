@@ -129,9 +129,8 @@ footer {
 /*banner*/
 #banner {
     background: url(../img/banner.png);
-    background-color: #211C2F;
+    background-color: #151129;
     background-repeat: no-repeat;
-    background-size: cover;
     background-position: center;
     height: 460px;
     margin-top: 99px;
@@ -366,7 +365,7 @@ label {
 /* Modal Content/Box */
 .modal-content {
     background-color: #fefefe;
-    margin: 20% auto; /* 15% from the top and centered */
+    margin: 30% auto; /* 15% from the top and centered */
     padding: 30px;
     border: 1px solid #888;
     border-radius: 4px;
@@ -717,4 +716,10 @@ li {
         font-size: 12px;
         line-height: 22px;
     }
+
+    .modal-content {
+        background-color: #fefefe;
+        margin: 40% auto; /* 15% from the top and centered */
+    }
+
 }
